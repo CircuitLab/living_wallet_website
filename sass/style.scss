@@ -1,0 +1,119 @@
+#wrapper{
+  width: 100%;
+  height: 100%;
+  background: url("../img/background.jpg");
+  #wrapper_inner{
+    width: 980px;
+    background: #fff;
+    margin: 0 auto;
+    .left{float: left;}
+    .right{float: right;}
+    #header{
+      clear: both;
+      height: 74px;
+      width: 980px;
+      padding-top: 20px;
+      display: inline-block;
+      *display: inline;  
+      *zoom: 1;
+      h1{
+        margin-left: 30px;
+      }
+    }
+    #contents{
+      width: 760px;
+      margin: 0 auto;
+      .column{
+        display: inline-block;
+        *display: inline;  
+        *zoom: 1;
+        width: 100%;
+        margin-bottom: 100px;
+        h3{
+          margin-bottom: 20px;
+        }
+        .mode{
+          margin-bottom: 60px;
+        }
+        #movie{
+          margin-top: 25px;
+          width: 766px;
+          height: 442px;
+          background: url("../img/movie_background.jpg") no-repeat;
+          iframe{
+            margin: 12px;
+          }
+        }
+        p.step{
+          float: left;
+          margin-right: 49px;
+        }
+        p.last{
+          margin-right: 0;
+        }
+      }
+      .bottom{
+        margin-bottom: 35px;
+        .right{
+          float: left;
+          margin-left: 40px;
+        }
+      }
+    }
+    #footer{
+      width: 980px;
+      height: 76px;
+      display: block;
+      background: #4e4e4e;
+      .left{
+        margin:20px 0 0 30px;
+      }
+      .right{
+        margin: 40px 30px 0 0;
+      }
+    }
+  }
+}
+
+#carrousel .main {
+  margin-bottom: 60px;
+  width: 945px;
+  padding-left: 35px;
+  overflow: hidden;
+}
+
+#carrousel .nav a.prev,
+#carrousel .nav a.next{
+  position: absolute;
+}
+
+#carrousel .nav a.prev{
+  margin-left: 50px;
+  margin-top: 220px;
+}
+
+#carrousel .nav a.next{
+  margin-left: 890px;
+  margin-top: 220px;
+}
+
+
+#carrousel .box {
+  float: left;
+  width: 913px;
+}
+#carrousel .indicator div {
+  float: left;
+  background-color: #333;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+#carrousel .indicator div,
+#carrousel .nav a {
+  cursor: pointer;
+}
+#carrousel .indicator div.current {
+  background-color: #4383FB!important;
+}

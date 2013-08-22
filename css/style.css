@@ -1,0 +1,148 @@
+/* line 1, ../sass/style.scss */
+#wrapper {
+  width: 100%;
+  background: url("../img/background.jpg");
+}
+/* line 4, ../sass/style.scss */
+#wrapper #wrapper_inner {
+  width: 980px;
+  background: #fff;
+  margin: 0 auto;
+}
+/* line 8, ../sass/style.scss */
+#wrapper #wrapper_inner .left {
+  float: left;
+}
+/* line 9, ../sass/style.scss */
+#wrapper #wrapper_inner .right {
+  float: right;
+}
+/* line 10, ../sass/style.scss */
+#wrapper #wrapper_inner #header {
+  height: 74px;
+  width: 980px;
+  padding-top: 20px;
+  display: block;
+}
+/* line 15, ../sass/style.scss */
+#wrapper #wrapper_inner #header h1 {
+  margin-left: 30px;
+}
+/* line 19, ../sass/style.scss */
+#wrapper #wrapper_inner #contents {
+  width: 760px;
+  margin: 0 auto;
+}
+/* line 22, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 100%;
+  margin-bottom: 100px;
+}
+/* line 28, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column h3 {
+  margin-bottom: 20px;
+}
+/* line 31, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column .mode {
+  margin-bottom: 60px;
+}
+/* line 34, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column #movie {
+  margin-top: 25px;
+  width: 766px;
+  height: 442px;
+  background: url("../img/movie_background.jpg") no-repeat;
+}
+/* line 39, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column #movie iframe {
+  margin: 12px;
+}
+/* line 43, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column p.step {
+  float: left;
+  margin-right: 49px;
+}
+/* line 47, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .column p.last {
+  margin-right: 0;
+}
+/* line 51, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .bottom {
+  margin-bottom: 35px;
+}
+/* line 53, ../sass/style.scss */
+#wrapper #wrapper_inner #contents .bottom .right {
+  float: left;
+  margin-left: 40px;
+}
+/* line 59, ../sass/style.scss */
+#wrapper #wrapper_inner #footer {
+  width: 980px;
+  height: 76px;
+  display: block;
+  background: #4e4e4e;
+}
+/* line 64, ../sass/style.scss */
+#wrapper #wrapper_inner #footer .left {
+  margin: 20px 0 0 30px;
+}
+/* line 67, ../sass/style.scss */
+#wrapper #wrapper_inner #footer .right {
+  margin: 40px 30px 0 0;
+}
+
+/* line 74, ../sass/style.scss */
+#carrousel .main {
+  margin-bottom: 60px;
+  width: 945px;
+  padding-left: 35px;
+  overflow: hidden;
+}
+
+/* line 82, ../sass/style.scss */
+#carrousel .nav a.prev,
+#carrousel .nav a.next {
+  position: absolute;
+}
+
+/* line 86, ../sass/style.scss */
+#carrousel .nav a.prev {
+  margin-left: 50px;
+  margin-top: 220px;
+}
+
+/* line 91, ../sass/style.scss */
+#carrousel .nav a.next {
+  margin-left: 890px;
+  margin-top: 220px;
+}
+
+/* line 97, ../sass/style.scss */
+#carrousel .box {
+  float: left;
+  width: 913px;
+}
+
+/* line 101, ../sass/style.scss */
+#carrousel .indicator div {
+  float: left;
+  background-color: #333;
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+/* line 110, ../sass/style.scss */
+#carrousel .indicator div,
+#carrousel .nav a {
+  cursor: pointer;
+}
+
+/* line 113, ../sass/style.scss */
+#carrousel .indicator div.current {
+  background-color: #4383FB;
+}
