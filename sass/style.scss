@@ -1,85 +1,102 @@
-#wrapper{
+body{
   width: 100%;
   height: 100%;
-  background: url("../img/background.jpg");
-  #wrapper_inner{
-    width: 980px;
-    background: #fff;
-    margin: 0 auto;
-    .left{float: left;}
-    .right{float: right;}
-    #header{
-      clear: both;
-      height: 74px;
+
+  position: relative;
+  background-color: transparent;
+  background-position: center top;
+  background-repeat: repeat-y;
+  min-width: 1040px;
+  width: auto !important;
+  #wrapper{
+    position: relative;
+    overflow: hidden;
+    background: url("../img/background.jpg");
+    background-position: center;
+    min-width: 1040px;
+    width: auto !important;
+    border: 12px solid #ffff00;
+    width: 1040px;
+    #wrapper_inner{
       width: 980px;
-      padding-top: 20px;
-      display: inline-block;
-      *display: inline;  
-      *zoom: 1;
-      h1{
-        margin-left: 30px;
-      }
-    }
-    #contents{
-      width: 760px;
+      background: #fff;
       margin: 0 auto;
-      .column{
+      .left{float: left;}
+      .right{float: right;}
+      #header{
+        clear: both;
+        height: 74px;
+        width: 980px;
+        padding-top: 20px;
         display: inline-block;
         *display: inline;  
         *zoom: 1;
-        width: 100%;
-        margin-bottom: 100px;
-        h3{
-          margin-bottom: 20px;
+        h1{
+          margin-left: 30px;
         }
-        .mode{
-          margin-bottom: 60px;
-        }
-        #movie{
-          margin-top: 25px;
-          width: 766px;
-          height: 442px;
-          background: url("../img/movie_background.jpg") no-repeat;
-          iframe{
-            margin: 12px;
+      }
+      #contents{
+        width: 760px;
+        margin: 0 auto;
+        .column{
+          display: inline-block;
+          *display: inline;  
+          *zoom: 1;
+          width: 100%;
+          margin-bottom: 100px;
+          h3{
+            margin-bottom: 20px;
+          }
+          .mode{
+            margin-bottom: 60px;
+          }
+          #movie{
+            margin-top: 25px;
+            width: 766px;
+            height: 442px;
+            background: url("../img/movie_background.jpg") no-repeat;
+            iframe{
+              margin: 12px;
+            }
+          }
+          p.step{
+            float: left;
+            margin-right: 49px;
+          }
+          p.last{
+            margin-right: 0;
           }
         }
-        p.step{
-          float: left;
-          margin-right: 49px;
+        .top{
+          margin-top: 35px;
         }
-        p.last{
-          margin-right: 0;
+        .bottom{
+          margin-bottom: 35px;
+          .right{
+            float: left;
+            margin-left: 40px;
+          }
         }
       }
-      .bottom{
-        margin-bottom: 35px;
+      #footer{
+        width: 980px;
+        height: 76px;
+        display: block;
+        background: #4e4e4e;
+        .left{
+          margin:20px 0 0 30px;
+        }
         .right{
-          float: left;
-          margin-left: 40px;
+          margin: 40px 30px 0 0;
         }
-      }
-    }
-    #footer{
-      width: 980px;
-      height: 76px;
-      display: block;
-      background: #4e4e4e;
-      .left{
-        margin:20px 0 0 30px;
-      }
-      .right{
-        margin: 40px 30px 0 0;
       }
     }
   }
 }
 
 #carrousel .main {
-  margin-bottom: 60px;
   width: 945px;
   padding-left: 35px;
-  overflow: hidden;
 }
 
 #carrousel .nav a.prev,

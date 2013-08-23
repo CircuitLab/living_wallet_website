@@ -1,132 +1,154 @@
 /* line 1, ../sass/style.scss */
-#wrapper {
+body {
   width: 100%;
-  background: url("../img/background.jpg");
+  height: 100%;
+  position: relative;
+  background-color: transparent;
+  background-position: center top;
+  background-repeat: repeat-y;
+  min-width: 1040px;
+  width: auto !important;
 }
-/* line 4, ../sass/style.scss */
-#wrapper #wrapper_inner {
+/* line 11, ../sass/style.scss */
+body #wrapper {
+  position: relative;
+  overflow: hidden;
+  background: url("../img/background.jpg");
+  background-position: center;
+  min-width: 1040px;
+  width: auto !important;
+  border: 12px solid #ffff00;
+  width: 1040px;
+}
+/* line 20, ../sass/style.scss */
+body #wrapper #wrapper_inner {
   width: 980px;
   background: #fff;
   margin: 0 auto;
 }
-/* line 8, ../sass/style.scss */
-#wrapper #wrapper_inner .left {
+/* line 24, ../sass/style.scss */
+body #wrapper #wrapper_inner .left {
   float: left;
 }
-/* line 9, ../sass/style.scss */
-#wrapper #wrapper_inner .right {
+/* line 25, ../sass/style.scss */
+body #wrapper #wrapper_inner .right {
   float: right;
 }
-/* line 10, ../sass/style.scss */
-#wrapper #wrapper_inner #header {
+/* line 26, ../sass/style.scss */
+body #wrapper #wrapper_inner #header {
+  clear: both;
   height: 74px;
   width: 980px;
   padding-top: 20px;
-  display: block;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
-/* line 15, ../sass/style.scss */
-#wrapper #wrapper_inner #header h1 {
+/* line 34, ../sass/style.scss */
+body #wrapper #wrapper_inner #header h1 {
   margin-left: 30px;
 }
-/* line 19, ../sass/style.scss */
-#wrapper #wrapper_inner #contents {
+/* line 38, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents {
   width: 760px;
   margin: 0 auto;
 }
-/* line 22, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column {
+/* line 41, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column {
   display: inline-block;
   *display: inline;
   *zoom: 1;
   width: 100%;
   margin-bottom: 100px;
 }
-/* line 28, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column h3 {
+/* line 47, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column h3 {
   margin-bottom: 20px;
 }
-/* line 31, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column .mode {
+/* line 50, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column .mode {
   margin-bottom: 60px;
 }
-/* line 34, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column #movie {
+/* line 53, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column #movie {
   margin-top: 25px;
   width: 766px;
   height: 442px;
   background: url("../img/movie_background.jpg") no-repeat;
 }
-/* line 39, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column #movie iframe {
+/* line 58, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column #movie iframe {
   margin: 12px;
 }
-/* line 43, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column p.step {
+/* line 62, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column p.step {
   float: left;
   margin-right: 49px;
 }
-/* line 47, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .column p.last {
+/* line 66, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .column p.last {
   margin-right: 0;
 }
-/* line 51, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .bottom {
+/* line 70, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .top {
+  margin-top: 35px;
+}
+/* line 73, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .bottom {
   margin-bottom: 35px;
 }
-/* line 53, ../sass/style.scss */
-#wrapper #wrapper_inner #contents .bottom .right {
+/* line 75, ../sass/style.scss */
+body #wrapper #wrapper_inner #contents .bottom .right {
   float: left;
   margin-left: 40px;
 }
-/* line 59, ../sass/style.scss */
-#wrapper #wrapper_inner #footer {
+/* line 81, ../sass/style.scss */
+body #wrapper #wrapper_inner #footer {
   width: 980px;
   height: 76px;
   display: block;
   background: #4e4e4e;
 }
-/* line 64, ../sass/style.scss */
-#wrapper #wrapper_inner #footer .left {
+/* line 86, ../sass/style.scss */
+body #wrapper #wrapper_inner #footer .left {
   margin: 20px 0 0 30px;
 }
-/* line 67, ../sass/style.scss */
-#wrapper #wrapper_inner #footer .right {
+/* line 89, ../sass/style.scss */
+body #wrapper #wrapper_inner #footer .right {
   margin: 40px 30px 0 0;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 #carrousel .main {
-  margin-bottom: 60px;
   width: 945px;
   padding-left: 35px;
-  overflow: hidden;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 #carrousel .nav a.prev,
 #carrousel .nav a.next {
   position: absolute;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 #carrousel .nav a.prev {
   margin-left: 50px;
   margin-top: 220px;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 #carrousel .nav a.next {
   margin-left: 890px;
   margin-top: 220px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 #carrousel .box {
   float: left;
   width: 913px;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #carrousel .indicator div {
   float: left;
   background-color: #333;
@@ -136,13 +158,13 @@
   height: 10px;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 #carrousel .indicator div,
 #carrousel .nav a {
   cursor: pointer;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 #carrousel .indicator div.current {
-  background-color: #4383FB;
+  background-color: #4383FB!important;
 }
