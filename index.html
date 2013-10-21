@@ -1,19 +1,29 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="ja"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="ja"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="ja"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
 <head>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Living Wallet</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="これは適切にお金を使ってもらうために作られた、命をもった「考える財布」です。">
   <meta name="viewport" content="width=device-width,maximum-scale=1">
-  <meta property="og:image" content="/img/og.png">
-  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta property="og:title" content="Living Wallet">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://livingwallet.cct.la/">
+  <meta property="og:description" content="これは適切にお金を使ってもらうために作られた、命をもった「考える財布」です。">
+  <meta property="og:image" content="http://livingwallet.cct.la/img/og.jpg">
+  <meta property="og:site_name" content="Living Wallet">
+  <meta property="fb:admins" content="100002024730526">
+  <meta content="ja_JP" property="og:locale">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@unibainc">
+  <meta name="twitter:creator" content="@unibainc">
+  <meta name="twitter:image:src" content="http://livingwallet.cct.la/img/slide/slide_thumb_1.png">
 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/style.css">
@@ -34,12 +44,25 @@
 <body>
 
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <div id="wrapper">
   <div id="wrapper_inner">
 
     <header id="header" class="clearfix">
       <h1><img src="img/logo.png" alt="Living Wallet"></h1>
+      <ul class="sns clearfix">
+        <li class="sns-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://livingwallet.cct.la/" data-text="Living Wallet | これは適切にお金を使ってもらうために作られた、命をもった「考える財布」です。" data-lang="en">Tweet</a></li>
+        <li class="sns-facebook"><div class="fb-like" data-href="http://livingwallet.cct.la/" data-width="120" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div></li>
+      </ul>
     </header>
 
     <div id="carrousel">
@@ -113,11 +136,52 @@
 
     <footer id="footer" class="clearfix">
       <div class="left">
-        <img src="img/bottom_logo.png" height="40" width="218" alt="Living Wallet">
+        <img src="img/credit.png" width="61" height="11" alt="CREDIT">
+
+        <dl class="credit-list">
+          <dt><img src="img/staff.png" width="13" height="13" alt="作"></dt>
+          <dd>
+            <ul class="clearfix">
+              <li><img src="img/staff_sasaki.png" width="74" height="13" alt="佐々木 康晴"></li>
+              <li><img src="img/staff_sagara.png" width="73" height="13" alt="相楽 賢太郎"></li>
+              <li><img src="img/staff_onoe.png" width="60" height="13" alt="尾上 永晃"></li>
+              <li><img src="img/staff_kuno.png" width="60" height="13" alt="久野 了史"></li>
+            </ul>
+            <ul class="clearfix">
+              <li><img src="img/staff_kawai.png" width="46" height="13" alt="河合 伶"></li>
+              <li><img src="img/staff_saito.png" width="60" height="13" alt="齋藤 秀行"></li>
+              <li><img src="img/staff_gokita.png" width="74" height="13" alt="五木田 唯衣"></li>
+              <li><img src="img/staff_sato.png" width="60" height="13" alt="佐藤 大地"></li>
+            </ul>
+          </dd>
+        </dl>
+
+        <dl class="credit-list">
+          <dt><img src="img/adviser.png" width="90" height="13" alt="アドバイザー"></dt>
+          <dd>
+            <ul class="clearfix">
+              <li><img src="img/adviser_teramoto.png" width="46" height="13" alt="寺本 誠"></li>
+              <li><img src="img/adviser_ogawa.png" width="60" height="13" alt="小川 晋作"></li>
+            </ul>
+          </dd>
+        </dl>
+
+        <ul class="banner-list clearfix">
+          <li><a href="http://www.dentsu.co.jp/" target="_blank"><img src="img/banner_dentsu.png" width="87" height="27" alt="dentsu"></a></li>
+          <li><a href="http://uniba.jp/" target="_blank"><img src="img/banner_uniba.png" width="87" height="27" alt="Uniba Inc."></a></li>
+          <li class="last"><a href="http://zaim.net/" target="_blank"><img src="img/banner_zaim.png" width="87" height="27" alt="zaim"></a></li>
+        </ul>
+
       </div>
       <div class="right">
-        プロトタイプの製品のため<br>
-        今のところ、一般販売の予定はありません。
+        <ul class="sns clearfix">
+          <li class="sns-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://livingwallet.cct.la/" data-text="Living Wallet | これは適切にお金を使ってもらうために作られた、命をもった「考える財布」です。" data-lang="en">Tweet</a></li>
+          <li class="sns-facebook"><div class="fb-like" data-href="http://livingwallet.cct.la/" data-width="120" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div></li>
+        </ul>
+        <div class="note">
+          <p class="caution"><img src="img/caution.png" width="222" height="33" alt="プロトタイプの製品のため今のところ、一般販売の予定はありません"></p>
+          <address><img src="img/copyright.png" width="113" height="10" alt="LivingWallet &copy; 2013"></address>
+        </div>
       </div>
     </footer>
 

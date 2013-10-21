@@ -25,14 +25,19 @@ body{
       .right{float: right;}
       #header{
         clear: both;
-        height: 74px;
+        height: 54px;
         width: 980px;
         padding-top: 20px;
         display: inline-block;
         *display: inline;
         *zoom: 1;
+        position: relative;
         h1{
           margin-left: 30px;
+        }
+        .sns{
+          right: 30px;
+          bottom: 1px;
         }
       }
       #contents{
@@ -80,14 +85,18 @@ body{
       }
       #footer{
         width: 980px;
-        height: 76px;
-        display: block;
-        background: #4e4e4e;
+        padding: 0 0 50px 0;
+        background: url("../img/bottom_background.gif");
+        position: relative;
         .left{
-          margin:20px 0 0 30px;
+          padding: 67px 0 0 40px
         }
         .right{
-          margin: 40px 30px 0 0;
+          margin: 68px 37px 0 0;
+          position: relative;
+          .sns {
+            right: 0px;
+          }
         }
       }
     }
@@ -133,4 +142,51 @@ body{
 }
 #carrousel .indicator div.current {
   background-color: #4383FB!important;
+}
+
+.sns {
+  width: 180px;
+  position: absolute;
+  li {
+    float: left;
+    overflow: hidden;
+    &.sns-twitter {
+      width: 100px;
+    }
+    &.sns-facebook {
+      width: 80px;
+    }
+  }
+}
+
+.credit-list {
+  font-size: 0.85em;
+  dt {
+    padding: 24px 0 16px 0;
+  }
+  li {
+    float: left;
+    padding: 0 15px 13px 0;
+  }
+}
+
+.banner-list {
+  padding: 22px 0 0 0;
+  li {
+    float: left;
+    width: 87px;
+    padding: 0 9px 0 0;
+    &.last {
+      padding: 0 0 0 14px;
+      border-left: 2px solid #ffffff;
+    }
+  }
+}
+
+.note {
+  padding: 183px 0 0 0;
+  text-align: right;
+  .caution {
+    padding: 0 0 17px 0;
+  }
 }
