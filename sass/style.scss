@@ -1,102 +1,105 @@
 body{
   width: 100%;
   height: 100%;
-
   position: relative;
   background-color: transparent;
   background-position: center top;
   background-repeat: repeat-y;
   min-width: 1040px;
   width: auto !important;
-  #wrapper{
-    position: relative;
-    overflow: hidden;
-    background: url("../img/background.jpg");
-    background-position: center;
-    min-width: 1040px;
-    width: auto !important;
-    border: 12px solid #ffff00;
-    width: 1040px;
-    #wrapper_inner{
+}
+
+#wrapper{
+  position: relative;
+  overflow: hidden;
+  background: url("../img/background.jpg");
+  background-position: center;
+  min-width: 1040px;
+  width: auto !important;
+  border: 12px solid #ffff00;
+  width: 1040px;
+  #wrapper_inner{
+    width: 980px;
+    background: #fff;
+    margin: 0 auto;
+    .left{float: left;}
+    .right{float: right;}
+    #header{
+      clear: both;
+      height: 54px;
       width: 980px;
-      background: #fff;
+      padding-top: 20px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      position: relative;
+      h1{
+        margin-left: 30px;
+      }
+      .sns{
+        right: 30px;
+        bottom: 23px;
+      }
+    }
+    #contents{
+      width: 760px;
       margin: 0 auto;
-      .left{float: left;}
-      .right{float: right;}
-      #header{
-        clear: both;
-        height: 54px;
-        width: 980px;
-        padding-top: 20px;
+      .column{
         display: inline-block;
         *display: inline;
         *zoom: 1;
-        position: relative;
-        h1{
-          margin-left: 30px;
+        width: 100%;
+        margin-bottom: 100px;
+        h3{
+          margin-bottom: 20px;
         }
-        .sns{
-          right: 30px;
-          bottom: 1px;
+        .mode{
+          margin-bottom: 60px;
         }
-      }
-      #contents{
-        width: 760px;
-        margin: 0 auto;
-        .column{
-          display: inline-block;
-          *display: inline;
-          *zoom: 1;
-          width: 100%;
-          margin-bottom: 100px;
-          h3{
-            margin-bottom: 20px;
-          }
-          .mode{
-            margin-bottom: 60px;
-          }
-          #movie{
-            margin-top: 25px;
-            width: 766px;
-            height: 442px;
-            background: url("../img/movie_background.jpg") no-repeat;
-            iframe{
-              margin: 12px;
-            }
-          }
-          p.step{
-            float: left;
-            margin-right: 49px;
-          }
-          p.last{
-            margin-right: 0;
+        #movie{
+          margin-top: 25px;
+          width: 766px;
+          height: 442px;
+          background: url("../img/movie_background.jpg") no-repeat;
+          iframe{
+            margin: 12px;
           }
         }
-        .top{
-          margin-top: 35px;
-        }
-        .bottom{
-          margin-bottom: 35px;
-          .right{
-            float: left;
-            margin-left: 40px;
+        p.step{
+          float: left;
+          margin-right: 49px;
+          .en &{
+            margin-right: 33px;
           }
+        }
+        p.last{
+          margin-right: 0 !important;
         }
       }
-      #footer{
-        width: 980px;
-        padding: 0 0 50px 0;
-        background: url("../img/bottom_background.gif");
-        position: relative;
-        .left{
-          padding: 67px 0 0 40px
-        }
+      .top{
+        margin-top: 35px;
+      }
+      .bottom{
+        margin-bottom: 35px;
         .right{
-          margin: 68px 37px 0 0;
-          position: relative;
-          .sns {
-            right: 0px;
-          }
+          float: left;
+          margin-left: 40px;
+        }
+      }
+    }
+    #footer{
+      width: 980px;
+      padding: 0 0 50px 0;
+      background: url("../img/bottom_background.gif");
+      position: relative;
+      .left{
+        padding: 67px 0 0 40px
+      }
+      .right{
+        margin: 68px 37px 0 0;
+        position: relative;
+        .sns {
+          right: 0px;
         }
       }
     }
@@ -142,6 +145,36 @@ body{
 }
 #carrousel .indicator div.current {
   background-color: #4383FB!important;
+}
+
+.lang {
+  width: 69px;
+  height: 37px;
+  padding: 0 18px 0 0;
+  border-right: 2px solid #000000;
+  position: absolute;
+  right: 240px;
+  bottom: 18px;
+  li {
+    float: left;
+    padding: 0 7px 0 8px;
+    line-height: 37px;
+    img {
+      margin: 13px 0 0 0;
+    }
+    a {
+      display: block;
+      height: 100%;
+      &:hover {
+        img {
+          opacity: 1.0;
+        }
+      }
+      img {
+        opacity: 0.55;
+      }
+    }
+  }
 }
 
 .sns {

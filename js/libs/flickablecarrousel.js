@@ -24,7 +24,7 @@ $.fn.carrousel = function(options){
  var vDowmEvent  = BGPSupportsTouches ? "touchstart" : "mousedown";
  var vUpEvent    = BGPSupportsTouches ? "touchend" : "mouseup";
  var vOutEvent   = BGPSupportsTouches ? "touchleave" : "mouseout";
- 
+
  function init(){
   addView();
   dragMove();
@@ -52,7 +52,7 @@ $.fn.carrousel = function(options){
  //前後ナビ表示
   if(options.isPrevNext){
    var put = $rootObj.find(".nav");
-   var str = '<a data-num="0" class="prev"><div class="prev hide"><img src="img/slide/slide_thumb_prev.png"></div></a><a data-num="1" class="next"><div class="next show"><img src="img/slide/slide_thumb_next.png"></div></a>';
+   var str = '<a data-num="0" class="prev"><div class="prev hide"><img src="/img/slide/slide_thumb_prev.png"></div></a><a data-num="1" class="next"><div class="next show"><img src="/img/slide/slide_thumb_next.png"></div></a>';
    put.html(str);
    navElm = $rootObj.find(".nav a");
    $prev  = $rootObj.find(".nav .prev");
@@ -126,7 +126,7 @@ $.fn.carrousel = function(options){
   var end     = 0;
   var revmaxW = (maxW * -1) + unitW;
   var isDrag  = false;
-  
+
   $target.bind(vDowmEvent,function(event){
    isDrag = true;
    if(BGPSupportsTouches){
@@ -136,7 +136,7 @@ $.fn.carrousel = function(options){
    }
    return false;
   });
-  
+
   $target.bind(vUpEvent,function(event){
    isDrag = false;
    var set = start - end;
@@ -153,7 +153,7 @@ $.fn.carrousel = function(options){
    retMove();
    return false;
   });
-  
+
   $target.bind(vMoveEvent,function(event){
    if(isDrag){
     var cur = Number($(this).css("margin-left").replace("px",""));
@@ -171,14 +171,14 @@ $.fn.carrousel = function(options){
     return false;
    }
   });
-  
+
   $target.bind(vOutEvent,function(event){
    isDrag = false;
    sliderAnimation();
    retMove();
    return false;
   });
-  
+
   function retMove(){
    var cur = Number($target.css("margin-left").replace("px",""));
    if(cur > 0){
@@ -192,7 +192,7 @@ $.fn.carrousel = function(options){
     },300);
    }
   };
-  
+
  }
  init();
 };
