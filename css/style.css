@@ -23,7 +23,7 @@ body {
     margin: 0 auto; }
     #wrapper #wrapper_inner .left {
       float: left; }
-    #wrapper #wrapper_inner .right {
+    #wrapper #wrapper_inner afp://10.1.0.10/shared {
       float: right; }
     #wrapper #wrapper_inner #header {
       clear: both;
@@ -177,3 +177,5 @@ body {
   text-align: right; }
   .note .caution {
     padding: 0 0 17px 0; }
+.no-js .en #wrapper {
+}
